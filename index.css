@@ -1,6 +1,6 @@
 :root {
-    --color-primario: #F2CB05;
-    --color-sec: #1f123f;
+    --color-primario: #d6ca8d;
+    --color-sec: #6c6975;
     --color-ter: #070108;
     --color-cuarto: #F2F2F2;
     --color-quinto: #0D0D0D;
@@ -8,13 +8,15 @@
 
 .menu_lista_idem {
     font-size: 24px;
+    color: #fff;
 }
 
 .about_container {
-    width: 65%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    position: center;
 }
 
 .about_container img {
@@ -23,11 +25,13 @@
 
 .about_titulo {
     font-size: 2rem;
+    text-align: center;
     color: var(--color-cuarto);
 }
 
 .about_parrafo {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    text-align: justify;
     color: var(--color-cuarto);
 }
 
@@ -50,8 +54,13 @@
     background-color: var(--color-ter);
 }
 
+.menu_header {
+    background-color: beige;
+}
+
 .menu_header img {
-    height: 3rem;
+    height: 5rem;
+    border-radius: 25%;
 }
 
 @media (max-width: 425px) {
@@ -67,11 +76,12 @@
     align-items: center;
     list-style-type: none;
     gap: 1rem;
+    color: #fff;
 }
 
 .menu_lista_item,
 .menu_lista_item_contacto {
-    color: var(--color-cuarto);
+    color: #fff;
 }
 
 .menu_lista_item a {
@@ -206,7 +216,7 @@
 }
 
 .footer {
-    padding: 2rem;
+    padding: 5rem;
     text-align: center;
 }
 
@@ -232,22 +242,25 @@
 }
 
 .skills_box {
-    position: relative;
+    position: flex;
     width: 15%;
-    height: 10rem;
+    height: 25%;
     background-color: white;
     padding: 1rem;
-
 }
 
-.skills_box ul {
-    position: absolute;
-    bottom: 1rem;
+.skills_img img {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .skills_name {
     font-weight: bold;
     margin-top: .5rem;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -288,6 +301,14 @@
     margin-bottom: 2rem;
 }
 
+
+.hobbies_img img{
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .hobbies_line {
     display: flex;
     flex-wrap: wrap;
@@ -296,7 +317,7 @@
 }
 
 .hobbies_box {
-    position: relative;
+    position: flex;
     width: 15%;
     height: 10rem;
     background-color: white;
@@ -305,13 +326,14 @@
 }
 
 .hobbies_box ul {
-    position: absolutere;
+    position: absolute;
     bottom: 1rem;
 }
 
 .hobbies_name {
     font-weight: bold;
     margin-top: .5rem;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -339,12 +361,11 @@
 }
 
 .experience {
-    padding: 2rem;
     background-color: var(--color-cuarto);
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .experience_section_title {
@@ -356,8 +377,7 @@
 .experiencie_box {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin: 1.5rem 0;
+    margin-bottom: 20px;
 }
 
 .experiencie_box:nth-child(3),
@@ -366,7 +386,12 @@
 }
 
 .experience_img {
-    width: 60%;
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin: 20px;
 }
 
 .experience_title {
@@ -386,7 +411,7 @@
 
 .experiencia_boton--repo,
 .experience_boton--demo {
-    padding: .8rem;
+    padding: 1rem;
     color: var(--color-sec);
     background-color: #fff;
     border: 1px solid var(--color-sec);
@@ -397,7 +422,7 @@
 .experience_boton--demo:hover {
     color: #fff;
     background-color: var(--color-ter);
-    border: 1px solid var(--color-ter);
+    border: 2px solid var(--color-ter);
 }
 
 @media (max-width: 768px) {
@@ -418,7 +443,7 @@
 
 .academica {
     padding: 2rem;
-    background-color: var(--color-sec);
+    background-color: rgb(11, 19, 128);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -445,14 +470,15 @@
 .academica_courses_item_img {
     background-color: #fff;
     padding: 2rem;
-    width: 90%;
+    width: 75%;
     position: relative;
     object-fit: cover;
     object-position: center;
     }
 
 .academica_courses_item_img img {
-    width: 80%;
+    width: 50%;
+    height: 40vh;
     margin: auto;
     display: block;
 }
@@ -462,6 +488,7 @@
     margin-top: 0.5rem;
     color: var(--color-cuarto);
     font-size: 24px;
+    list-style-type: none;
 }
 
 @media (max-width:425px) {
